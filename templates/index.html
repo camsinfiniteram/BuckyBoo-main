@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bucky BOO</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/stylesheet/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body id="page-top">
+    <header class="bg-primary bg-gradient text-white">
+        <div class="container px-4 text-center" id="bg-primary">
+            <h1 class="fw-bolder" id="fw-top">WelcOme tO Bucky BOO!!!</h1>
+            <h3 class="lead"> The only website to see if your classes are HOT or NOT </h3>
+            <button onclick="window.location.href='selectMajor.html'" id="selectMajButton">Let's Play</button>
+            <script src="static/testerjs.js"></script>
+
+        </div>
+    </header>
+
+
+    <!-- FIXME how do i delete this without getting the tester.js gone -->
+    <div class="container-fluid col-md-12">
+        <div class="row">
+            <div class="section col-md-4">
+                <section class="bg_light" id="LETS_PLAY">
+                    <div class="container px-4">
+                        <div class="col-lg-8">
+
+                            <h3 class=lead> Add Your Major(s) and Certificate(s): </h3>
+                            <select id="major_dropdown" name="major_dropdown">
+                                <option value="">Select a Major</option>
+
+                            </select>
+                            
+                            <button id="add_major_button">Add Another Major</button>
+                            <div id='majors_and_certs'> Your Majors: </div>
+                        </div>
+                        <div class="col-lg-8"></div>
+                        <select id="cert_dropdown" name="cert_dropdown">
+                        <option value="">Select a Certificate</option>
+
+                    </select>
+                    <button id="add_major_cert_button">Add Another Certificate</button>
+                    <bk>    
+                    <div id='majors_and_certs'> Your Certificates: </div>
+                </div>
+
+                </section>
+                <section id="choices">
+                    <div class="container px-4">
+                        <div class="row gx-4 justify-content-center">
+                            <h3 class="lead"> Upload your profile</h3>
+                            <ul>
+                                <li>Go to enroll.wisc.edu and log into your wisc account.</li>
+                                <li>Click on the degree planner tab.</li>
+                                <li>Click on generate new degree plan (name it whatever you want to!).</li>
+                                <li>Don't do ANYTHING to it (if grades are showing and you'd prefer to hide those, all
+                                    the power to you!). Download a PDF of your degree plan.</li>
+                                <li>Make sure that it shows your past terms/classes in a tabular format for this to work
+                                    successfully. Upload, wait, and relax as your classes are auto-populated – Busy
+                                    Badgers have no time but for Bucky Boo~</li>
+                                    
+                            </ul>
+                                <form action="/action_page.php">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                              </form>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="section col-md-4">
+                <button id="get_recommendations" onclick="get_recommendations()">Get Recommendations</button>
+                <div class="matchesbox">
+                    <table id="potential_matches_head">
+                        <thead>
+                            <tr>
+                                <th> Potential Matches </th>
+                            </tr>
+                        </thead>
+                        <tbody id="potential_matches_body">
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <button id="like" onclick="like()" style=" background: linear-gradient(magenta, red); font-size: 20pt">
+                    Like
+                </button>
+                <button id="dislike" onclick="dislike()"
+                    style="background: linear-gradient(magenta, red); font-size: 20pt">
+                    Dislike
+                </button>
+            </div>
+            <div class="section col-md-4">
+
+                <select id="liked_courses">
+                    <option value="">Your Matches</option>
+                </select>
+                <div class="chatbox">
+                    <div class="chat-messages">
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type a message...">
+                        <button id='sendButton'>Send</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">Slayright &copy; ZamZam Haji and Camden Zhu, 2024</p>
+        </div>
+    </footer>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

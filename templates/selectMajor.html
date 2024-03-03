@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="container-fluid col-md-12">
+        <div class="row">
+            <div class="section col-md-4">
+                <section class="bg_light" id="LETS_PLAY">
+                    <div class="container px-4">
+                        <div class="col-lg-8">
+
+                            <h3 class=lead> Add Your Major(s) and Certificate(s): </h3>
+                            <select id="major_dropdown" name="major_dropdown">
+                                <option value="">Select a Major</option>
+
+                            </select>
+                            
+                            <button id="add_major_button">Add Another Major</button>
+                            <div id='majors_and_certs'> Your Majors: </div>
+                        </div>
+                        <div class="col-lg-8"></div>
+                        <select id="cert_dropdown" name="cert_dropdown">
+                        <option value="">Select a Certificate</option>
+
+                    </select>
+                    <button id="add_major_cert_button">Add Another Certificate</button>
+                    <bk>    
+                    <div id='majors_and_certs'> Your Certificates: </div>
+                </div>
+
+                </section>
+                <section id="choices">
+                    <div class="container px-4">
+                        <div class="row gx-4 justify-content-center">
+                            <h3 class="lead"> Upload your profile</h3>
+                            <ul>
+                                <li>Go to enroll.wisc.edu and log into your wisc account.</li>
+                                <li>Click on the degree planner tab.</li>
+                                <li>Click on generate new degree plan (name it whatever you want to!).</li>
+                                <li>Don't do ANYTHING to it (if grades are showing and you'd prefer to hide those, all
+                                    the power to you!). Download a PDF of your degree plan.</li>
+                                <li>Make sure that it shows your past terms/classes in a tabular format for this to work
+                                    successfully. Upload, wait, and relax as your classes are auto-populated – Busy
+                                    Badgers have no time but for Bucky Boo~</li>
+                                    
+                            </ul>
+                                <form action="/action_page.php">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                              </form>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+</html>
